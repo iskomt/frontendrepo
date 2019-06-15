@@ -7,7 +7,7 @@ const express = require('express');
 const httpShutdown = require('http-shutdown');
 const path = require('path');
 const app = express();
-const config = require('./config');
+
 
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -16,10 +16,10 @@ app.get('*', (req, res) => {
 });
 
 // Listen on the port
-const server = httpShutdown(app.listen(config.port, () => {
-	console.log(`Web is listening on port ${config.port}`);
+const server = httpShutdown(app.listen(3000, () => {
+	console.log(`Web is listening on port 3000`);
 }));
 
-server.host = `http://localhost:${config.port}`;
+server.host = `http://localhost:3000`;
 
 module.exports = server;
