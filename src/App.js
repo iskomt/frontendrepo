@@ -12,6 +12,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <Navbar title="Oscars 201995" />
+          <Navbar title="Oscars 2019999" />
+          <Navbar title="Oscars 2019" />
+          <Navbar title="Oscars 2019bigfeature" />
+          <Navbar title="Oscars 2019456465456" />
+
           <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
           <Route
             path="/actors"
