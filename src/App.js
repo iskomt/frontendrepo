@@ -14,7 +14,7 @@ class App extends Component {
         <div className="App">
           <Navbar title="Oscars 201995" />
           <Navbar title="Oscars 2019" />
-          <Navbar title="Oscars 2019" />
+          <Navbar title="Oscars 2019bigfeature" />
           <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
           <Route
             path="/actors"
